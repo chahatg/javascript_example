@@ -18,6 +18,9 @@ for(i = 0; i < list.childNodes.length; i++){
 }
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
-var itemsNum = list.childNodes.length;
+var itemsTotal = list.childNodes.length;
+var heading = document.getElementsByNameTag("H2")[0];
+li = document.createElement("span");
+span.appendChild(document.createTextNode(itemsTotal));
+heading.appendChild(span);
 
-document.getElementById("header").innerHTML += " ", itemsNum;
